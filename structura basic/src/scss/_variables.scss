@@ -1,0 +1,21 @@
+$base-orange: #FBAF5D;
+$pink: #F5989D;
+$darkpink: #F26D7D;
+$white: #fff;
+$shadow: #E9CDC5;
+$lightgrey: #F7F6F6;
+$hovergrey: #E7E5E5;
+$mediumgrey: #EBEBEB;
+$mediumblack: #9A9A9A;
+$mediumpurple: #8781BD;
+$aquablue: #00BFF3;
+$ultraviolet: #BC8BBE;
+$darkviolet: #430D61;
+
+@mixin flex {
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+}

@@ -1,0 +1,428 @@
+.content {
+  margin: 0;
+}
+
+.firstblock {
+  background-color: $lightgrey;
+  height: 900px;
+  @include flex;
+
+  &_container {
+    width: 990px;
+    margin: 200px auto;
+    height: 700px;
+    @include flex;
+
+    &__left {
+      flex: 1;
+      height: 500px;
+
+      &--header {
+        color: $white;
+        margin: 0;
+        margin-left: 120px;
+        font-size: 25px;
+        text-indent: 20px;
+      }
+
+      &--email {
+        margin-top: 20px;
+        padding: 0;
+        margin-left: 120px;
+
+        input {
+          height: 30px;
+          background-color: $mediumgrey;
+          color: $mediumblack;
+          text-indent: 20px;
+          border: 1px solid $mediumblack;
+          border-radius: 5px;
+          width: 250px;
+        }
+      }
+
+      &--password {
+        margin-top: 20px;
+        padding: 0;
+        margin-left: 120px;
+
+        input {
+          height: 30px;
+          background-color: $mediumgrey;
+          color: $mediumblack;
+          text-indent: 20px;
+          border: 1px solid $mediumblack;
+          border-radius: 5px;
+          width: 250px;
+        }
+      }
+
+      &--options {
+        margin-top: 20px;
+        padding: 0;
+        border-radius: 5px;
+        color: $white;
+        box-sizing: border-box;
+        @include flex;
+        width: 250px;
+        font-size: 12px;
+        margin-left: 120px;
+
+        &--recovery {
+          display: inline-block;
+          height: 30px;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          flex: 3;
+
+          a {
+            text-decoration: none;
+            color: $white;
+          }
+
+          p {
+            padding: 10px;
+            margin: 0;
+            background-color: $mediumpurple;
+            border: 1px solid $mediumpurple;
+            border-radius: 5px;
+          }
+        }
+
+        &--signin {
+          display: inline-block;
+          border: 1px solid $white;
+          height: 30px;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          flex: 1;
+
+          a {
+            text-decoration: none;
+            color: $white;
+          }
+
+          p {
+            padding: 10px;
+            margin: 0;
+            background-color: $aquablue;
+            border-radius: 5px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &__right {
+      flex: 1;
+      height: 500px;
+
+      &--header {
+        color: $white;
+        margin: 0;
+        font-size: 25px;
+        text-indent: 20px;
+        margin-left: 120px;
+      }
+
+      &--name {
+        margin-top: 20px;
+        padding: 0;
+        margin-left: 120px;
+
+        input {
+          height: 30px;
+          background-color: $mediumgrey;
+          color: $mediumblack;
+          text-indent: 20px;
+          border: 1px solid $mediumblack;
+          border-radius: 10px;
+          width: 250px;
+        }
+      }
+
+      &--email {
+        margin-top: 20px;
+        padding: 0;
+        margin-left: 120px;
+
+        input {
+            height: 30px;
+            background-color: $mediumgrey;
+            color: $mediumblack;
+            text-indent: 20px;
+            border: 1px solid $mediumblack;
+            border-radius: 10px;
+            width: 250px;
+        }
+      }
+
+      &--password {
+        margin-top: 20px;
+        padding: 0;
+        margin-left: 120px;
+
+        input {
+            height: 30px;
+            background-color: $mediumgrey;
+            color: $mediumblack;
+            text-indent: 20px;
+            border: 1px solid $mediumblack;
+            border-radius: 5px;
+            width: 250px;
+        }
+      }
+
+      &--passwordconfirm {
+        margin-top: 20px;
+        padding: 0;
+        margin-left: 120px;
+
+        input {
+            height: 30px;
+            background-color: $mediumgrey;
+            color: $mediumblack;
+            text-indent: 20px;
+            border: 1px solid $mediumblack;
+            border-radius: 5px;
+            width: 250px;
+        }
+      }
+
+      &--signup {
+        margin-top: 20px;
+        padding: 0;
+        background-color: $aquablue;
+        color: $white;
+        width: 250px;
+        height: 30px;
+        @include flex;
+        border: 1px solid $white;
+        border-radius: 10px;
+        margin-left: 120px;
+
+        a {
+          text-decoration: none;
+          color: $white;
+          text-align: center;
+          margin: auto;
+          p {
+            margin: auto;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.secondblock {
+    background-color: $lightgrey;
+    height: 800px;
+    @include flex;
+    margin: 0;
+    padding: 0;
+
+    &_container {
+        margin: auto;
+        width: 990px;
+        height: 800px;
+        padding: 0;
+
+
+        a {
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.thirdblock {
+  background-color: $mediumgrey;
+  height: 300px;
+
+  &_container {
+    margin: 0 auto;
+    width: 990px;
+    @include flex;
+
+    &__flexed {
+      flex: 1;
+      height: 300px;
+      
+      &--header {
+        color: $base-orange;
+        font-weight: 800;
+        padding: 50px;
+      }
+
+      &--text {
+        font-size: 12px;
+        padding: 0 50px;
+        font-weight: 700;
+      }
+
+      &:hover {
+        background-color: $hovergrey;
+      }
+    }
+  }
+}
+
+.fourthblock {
+  background-color: $ultraviolet;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+
+  &_container {
+    margin: 0 auto;
+    width: 990px;
+    padding-top: 250px;
+
+    &__field {
+      height: 600px;
+      background-color: $darkviolet;
+      width: 400px;
+      margin: 0 auto;
+      border-radius: 45px;
+
+      &--header {
+        text-align: center;
+        font-size: 24px;
+        padding-top: 30px;
+        margin: 0;
+        color: $white;
+        font-weight: 700;
+      }
+
+      &--subheader {
+        font-size: 8px;
+        color: $white;
+        padding-top: 10px;
+        margin: 0;
+        text-align: center;
+      }
+
+      &--selection {
+        color: $white;
+        padding-top: 40px;
+        margin-left: 80px;
+      }
+
+      &--donut {
+        @include flex;
+        margin-top: 40px;
+      }
+
+      &--container {
+        flex: 1;
+        width: 50px;
+        height: 100px;
+        border: 1px solid $darkviolet;
+        margin-left: 50px;
+        
+        &:nth-child(2) {
+          margin-left: 10px;
+        }
+
+        &:nth-child(3) {
+          margin-left: 10px;
+          margin-right: 50px;
+        }
+
+        &:hover {
+
+          img {
+            border: 2px solid $white;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      &--content {
+        color: $white;
+        margin-left: 80px;
+        margin-top: 30px;
+      }
+
+      &--realitycheck {
+        margin-left: 80px;
+        margin-top: 20px;
+
+        div {
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+        }
+
+        span {
+          color: $white;
+          margin-left: 5px;
+        }
+      }
+
+      &--name {
+        margin-top: 30px;
+        margin-left: 50px;
+        width: 300px;
+
+        input {
+          height: 30px;
+          width: 290px;
+          text-indent: 30px;
+          border-radius: 5px;
+          border: 1px solid $darkviolet;
+
+        }
+      }
+
+      &--price {
+        margin-top: 30px;
+        margin-left: 50px;
+        width: 300px;
+
+        input {
+          height: 30px;
+          width: 290px;
+          text-indent: 30px;
+          border-radius: 5px;
+          border: 1px solid $darkviolet;
+        }
+      }
+
+      &--create {
+        margin-top: 30px;
+        margin-left: 50px;
+        width: 290px;
+        @include flex;
+        background-color: $darkpink;
+        height: 30px;
+        border: 1px solid $darkviolet;
+        border-radius: 5px;
+
+        a {
+          margin: auto;
+          text-decoration: none;
+
+          p {
+            margin: auto;
+            color:  $white;
+          }
+        }
+      }
+    }
+  }
+}

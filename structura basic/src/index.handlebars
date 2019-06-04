@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FinalProject</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+    {{> partials/header}}
+    {{> partials/wrapper}}
+    {{> partials/social}}
+</div>
+
+
+<script>
+    function showAlert () {
+        var trigger = document.getElementById("hidden");
+        if (trigger.style.display === "none") {
+            trigger.style.display = "block";
+        } else {
+            trigger.style.display = "none";
+        }
+    }
+</script>
+</body>
+
+</html>
